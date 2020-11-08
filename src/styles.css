@@ -1,3 +1,30 @@
-form.login-form {
-    display: none;
+/* Variables */
+:root {
+    --blue: #597ef7;
+    --pink: #f759ab;
+    --transition-time: 0.25s;
+    font-size: 15px;
+}
+
+div {
+    align-items: center;
+    font-family: "Roboto", serif;
+    text-align: center;
+    transition: all var(--transition-time) fade;
+}
+
+input[type=button] {
+    color: red;
+}
+
+form {
+    opacity: 1;
+    height: auto;
+}
+/* Handle transition for display */
+form.hidden {
+    opacity: 0;
+    height: 0;
+    transition: opacity var(--transition-time) ease-out;
+    overflow: hidden;
 }

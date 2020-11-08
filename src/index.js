@@ -14,11 +14,11 @@ function swapForm(event) {
 
     // Swap based on parent
     if (currentForm.className == "register-form") {
-        loginForm.style.display = "block";
-        registerForm.style.display = "none";
+        loginForm.classList.remove("hidden");
+        registerForm.classList.add("hidden");
     } else if (currentForm.className == "login-form") {
-        loginForm.style.display = "none";
-        registerForm.style.display = "block";
+        loginForm.classList.add("hidden");
+        registerForm.classList.remove("hidden");
     } else {
         // This should not happen
         alert("Error: Swap state failed. You should not see this message.");
