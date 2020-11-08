@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>Simple Login Page</title>
+        <script type="text/javascript" src="./src/index.js"></script>
+        <link rel="stylesheet" href="./src/styles.css" />
+    </head>
+    <body>
+        <div class="login-page">
+            <div class="form">
+                <form class="register-form">
+                    <input
+                        type="text"
+                        id="firstname"
+                        placeholder="firstname"
+                    /><br />
+                    <input
+                        type="text"
+                        id="lastname"
+                        placeholder="lastname"
+                    /><br />
+                    <input
+                        type="text"
+                        id="schoolname"
+                        placeholder="school"
+                    /><br />
+                    <input
+                        type="button"
+                        value="Register"
+                        onClick="registerClicked(event)"
+                    />
+                    <a
+                        id="registerSwap"
+                        class="message"
+                        href="#"
+                        onclick="swapForm(event)"
+                        >Already Registered?</a
+                    >
+                </form>
+
+                <form class="login-form">
+                    <input
+                        type="text"
+                        id="username"
+                        placeholder="username"
+                    /><br />
+                    <input
+                        type="button"
+                        value="Log On"
+                        onClick="logOnClicked()"
+                    />
+                    <a
+                        id="loginSwap"
+                        class="message"
+                        href="#"
+                        onclick="swapForm(event)"
+                        >Not Registered?</a
+                    >
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
